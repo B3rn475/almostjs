@@ -17,7 +17,23 @@
     "url": "https://github.com/B3rn475/almostjs/issues"
   },
   "homepage": "https://github.com/B3rn475/almostjs#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "exposify": "^0.5.0",
+    "gulp": "^3.9.0",
+    "gulp-extract-sourcemap": "^0.1.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-uglify": "^1.5.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
   "dependencies": {
-    "almost-core": "^1.0.0-alpha.1"
+    "almost-core": "^1.0.0-alpha.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "prepublish": "gulp"
   }
 }
