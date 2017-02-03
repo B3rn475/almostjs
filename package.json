@@ -1,0 +1,23 @@
+{
+  "name": "almost",
+  "version": "v1.0.0-alpha.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B3rn475/almostjs.git"
+  },
+  "author": "Carlo Bernaschina (GitHub: B3rn475)",
+  "license": "MIT",
+  "licenses": {
+    "type": "MIT",
+    "url": "http://github.com/B3rn475/almostjs/raw/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/B3rn475/almostjs/issues"
+  },
+  "homepage": "https://github.com/B3rn475/almostjs#readme",
+  "dependencies": {
+    "almost-core": "^1.0.0-alpha.1"
+  }
+}
