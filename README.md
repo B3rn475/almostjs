@@ -11,7 +11,7 @@ ALMOsT main components are:
 
 [![NPM Version][core-npm-image]][core-npm-url] [__almost-core__](https://github.com/B3rn475/almostjs-core)
 
-[![NPM Version][extend-npm-image]][extend-npm-url] [__almost-extend_](https://github.com/B3rn475/almostjs-extend)
+[![NPM Version][extend-npm-image]][extend-npm-url] [__almost-extend__](https://github.com/B3rn475/almostjs-extend)
 
 ALMOsT gives you a set of plugins which can be installed separately:
 
