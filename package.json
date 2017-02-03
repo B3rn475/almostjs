@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "almost-core": "^1.0.0-alpha.2",
-    "almost-extend": "^1.0.0-alpha.1"
+    "almost-extend": "^1.0.0-alpha.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
