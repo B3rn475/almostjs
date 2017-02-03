@@ -10,7 +10,8 @@ Project Structure
 ALMOsT main components are:
 
 [![NPM Version][core-npm-image]][core-npm-url] [__almost-core__](https://github.com/B3rn475/almostjs-core)
-[__almost-core__](https://github.com/B3rn475/almostjs-core)
+
+[![NPM Version][extend-npm-image]][extend-npm-url] [__almost-extend_](https://github.com/B3rn475/almostjs-extend)
 
 ALMOsT gives you a set of plugins which can be installed separately:
 
@@ -20,6 +21,8 @@ ALMOsT gives you a set of plugins which can be installed separately:
 [npm-url]: https://npmjs.org/package/almost
 [core-npm-image]: https://img.shields.io/npm/v/almost-core.svg
 [core-npm-url]: https://npmjs.org/package/almost-core
+[extend-npm-image]: https://img.shields.io/npm/v/almost-extend.svg
+[extend-npm-url]: https://npmjs.org/package/almost-extend
 [joint-npm-image]: https://img.shields.io/npm/v/almost-joint.svg
 [joint-npm-url]: https://npmjs.org/package/almost-joint
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
