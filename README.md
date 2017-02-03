@@ -1,2 +1,2 @@
 # almostjs
-ALMOsT is a AgiLe MOdel Transformations framework for JavaScript
+ALMOsT is an AgiLe MOdel Transformations framework for JavaScript
