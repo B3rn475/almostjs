@@ -4,4 +4,10 @@
 /*jslint node: true*/
 "use strict";
 
-module.exports = require('almost-core');
+var core = require('almost-core'),
+    extend = require('almost-extend');
+
+core.Extender = extend.Extender;
+core.createExtender = extend.createExtender;
+
+module.exports = core;

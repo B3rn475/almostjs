@@ -10,6 +10,7 @@ Project Structure
 ALMOsT main components are:
 
 [![NPM Version][core-npm-image]][core-npm-url] [__almost-core__](https://github.com/B3rn475/almostjs-core)
+[__almost-core__](https://github.com/B3rn475/almostjs-core)
 
 ALMOsT gives you a set of plugins which can be installed separately:
 

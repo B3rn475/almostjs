@@ -1,6 +1,6 @@
 {
   "name": "almost",
-  "version": "v1.0.0-alpha.2",
+  "version": "v1.0.0-alpha.1",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -29,7 +29,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "almost-core": "^1.0.0-alpha.2"
+    "almost-core": "^1.0.0-alpha.2",
+    "almost-extend": "^1.0.0-alpha.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
