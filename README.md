@@ -2,6 +2,8 @@
 __ALMOsT__ is an **A**gi**L**e **MO**del **T**ransformation framework for JavaScript
 
 [![NPM Version][npm-image]][npm-url]
+[![Linux Build][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
 [![MIT licensed][license-image]][license-url]
 
 Project Structure
@@ -19,6 +21,10 @@ ALMOsT gives you a set of plugins which can be installed separately:
 
 [npm-image]: https://img.shields.io/npm/v/almost.svg
 [npm-url]: https://npmjs.org/package/almost
+[travis-image]: https://img.shields.io/travis/B3rn475/almostjs/master.svg?label=linux
+[travis-url]: https://travis-ci.org/B3rn475/almostjs
+[coveralls-image]: https://img.shields.io/coveralls/B3rn475/almostjs/master.svg
+[coveralls-url]: https://coveralls.io/r/B3rn475/almostjs?branch=master
 [core-npm-image]: https://img.shields.io/npm/v/almost-core.svg
 [core-npm-url]: https://npmjs.org/package/almost-core
 [extend-npm-image]: https://img.shields.io/npm/v/almost-extend.svg

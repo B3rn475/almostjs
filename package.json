@@ -26,14 +26,22 @@
     "gulp-rimraf": "^0.2.0",
     "gulp-uglify": "^1.5.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "async": "^1.4.2",
+    "coveralls": "latest",
+    "istanbul": "latest",
+    "mocha": "latest",
+    "sinon": "^1.17.7"
   },
   "dependencies": {
-    "almost-core": "^1.0.0-alpha.2",
-    "almost-extend": "^1.0.0-alpha.3"
+    "almost-core": "^1.0.0-alpha.4",
+    "almost-extend": "^1.0.0-alpha.3",
+    "lodash": "^4.17.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "build": "gulp",
     "prepublish": "gulp"
   }
