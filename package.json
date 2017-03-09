@@ -34,7 +34,7 @@
     "sinon": "^1.17.7"
   },
   "dependencies": {
-    "almost-core": "^1.0.0-alpha.4",
+    "almost-core": "^1.0.0-alpha.5",
     "almost-extend": "^1.0.0-alpha.3",
     "lodash": "^4.17.4"
   },
