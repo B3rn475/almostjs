@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "almost-core": "^1.0.0-alpha.5",
-    "almost-extend": "^1.0.0-alpha.3",
+    "almost-extend": "^1.0.0-alpha.5",
     "lodash": "^4.17.4"
   },
   "scripts": {
