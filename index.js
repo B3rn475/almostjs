@@ -19,6 +19,26 @@ var m2m = core.merge(
     }
 );
 
+var m2a = core.merge(
+    core.none('rules should just generate elements, relations and metadata'),
+    {
+        elements: core.reduceBy(
+            'id',
+            core.merge(
+                core.none('elements should just have the id, type, attributes and metadata fields'),
+                {
+                    id: core.first(),
+                    type: core.single('element type field should be generated once'),
+                    attributes: core.merge(),
+                    metadata: core.merge()
+                }
+            )
+        ),
+        relations: core.flatten(),
+        metadata: core.merge()
+    }
+);
+
 var m2t = core.merge(
     core.merge(
         core.none('rules should just generate name, isFolder, content and children'),
@@ -48,6 +68,10 @@ function createTransformer(rules, reduce) {
         case 'm2m':
         case 'model2model':
             reduce = m2m;
+            break;
+        case 'm2a':
+        case 'model2almost':
+            reduce = m2a;
             break;
         case 'm2t':
         case 'model2text':

@@ -18,7 +18,7 @@ ALMOsT main components are:
 
 ALMOsT gives you a set of plugins which can be installed separately:
 
-[![NPM Version][joint-npm-image]][joint-npm-url] [__almost-joint__](https://github.com/B3rn475/almostjs-core)
+[![NPM Version][joint-npm-image]][joint-npm-url] [__almost-joint__](https://github.com/B3rn475/almostjs-joint)
 
 [npm-image]: https://img.shields.io/npm/v/almost.svg
 [npm-url]: https://npmjs.org/package/almost
