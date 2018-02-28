@@ -6,7 +6,6 @@
 "use strict";
 
 var assert = require('assert'),
-    async = require('async'),
     sinon = require('sinon'),
     Rule = require('../lib/rule'),
     createRule = Rule;
