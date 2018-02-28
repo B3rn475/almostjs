@@ -22,7 +22,7 @@ var m2m = core.merge(
 var m2a = core.merge(
     core.none('rules should just generate elements, relations and metadata'),
     {
-        elements: core.reduceBy(
+        elements: core.flatten(core.reduceBy(
             'id',
             core.merge(
                 core.none('elements should just have the id, type, attributes and metadata fields'),
@@ -33,7 +33,7 @@ var m2a = core.merge(
                     metadata: core.merge()
                 }
             )
-        ),
+        )),
         relations: core.flatten(),
         metadata: core.merge()
     }
