@@ -30,7 +30,7 @@
     "coveralls": "latest",
     "istanbul": "latest",
     "mocha": "latest",
-    "sinon": "^1.17.7"
+    "sinon": "^4.4.2"
   },
   "dependencies": {
     "almost-core": "^1.0.0-alpha",
