@@ -20,6 +20,11 @@ ALMOsT gives you a set of plugins which can be installed separately:
 
 [![NPM Version][joint-npm-image]][joint-npm-url] [__almost-joint__](https://github.com/B3rn475/almostjs-joint)
 
+Related Articles
+---
+
+[ALMOsT.js: An Agile Model to Model and Model to Text Transformation Framework](https://link.springer.com/chapter/10.1007/978-3-319-60131-1_5)
+
 [npm-image]: https://img.shields.io/npm/v/almost.svg
 [npm-url]: https://npmjs.org/package/almost
 [travis-image]: https://img.shields.io/travis/B3rn475/almostjs/master.svg
