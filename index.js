@@ -131,6 +131,7 @@ module.exports = {
     createRule: Rule,
     createExtender: extend.createExtender,
     createTransformer: createTransformer,
+    m2a: m2a,
     m2m: m2m,
     m2t: m2t
 };
