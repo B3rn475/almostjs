@@ -38,3 +38,6 @@ jspm_packages
 
 # Publishing files
 dist
+
+#Package Lock
+package-lock.json
