@@ -1,16 +1,15 @@
 // Copyright (c) 2016, the ALMOsT project authors. Please see the
 // AUTHORS file for details. All rights reserved. Use of this source code is
-// governed by a MIT-style license that can be found in the LICENSE file.
+// governed by the MIT license that can be found in the LICENSE file.
 /*jslint node: true, nomen: true*/
 /*global describe, it*/
 "use strict";
 
-var assert = require('assert'),
+var _ = require('lodash'),
+    assert = require('assert'),
     sinon = require('sinon'),
     Rule = require('../lib/rule'),
     createRule = Rule;
-
-function noop() { return undefined; }
 
 describe('Rule', function () {
     it('should be a function', function () {
@@ -30,33 +29,38 @@ describe('Rule', function () {
     });
     describe('Creation', function () {
         it('should return a Rule if used with new', function () {
-            var rule = new Rule(noop, noop);
+            var rule = new Rule(_.noop, _.noop);
             assert.ok(rule instanceof Rule);
         });
         it('should return a Rule if used without new', function () {
-            var rule = createRule(noop, noop);
+            var rule = createRule(_.noop, _.noop);
             assert.ok(rule instanceof Rule);
         });
-        it('should throw if no condition', function () {
-            assert.throws(function () { createRule(undefined, noop); });
-            assert.throws(function () { createRule(null, noop); });
-            assert.throws(function () { createRule([], noop); });
-            assert.throws(function () { createRule({}, noop); });
-            assert.throws(function () { createRule('', noop); });
-            assert.throws(function () { createRule(/ /, noop); });
-            assert.throws(function () { createRule(0, noop); });
-            assert.throws(function () { createRule(1, noop); });
+        it('should throw without parameters', function () {
+            assert.throws(function () { createRule(); });
         });
-        it('should throw if no body', function () {
-            assert.throws(function () { createRule(noop); });
-            assert.throws(function () { createRule(noop, undefined); });
-            assert.throws(function () { createRule(noop, null); });
-            assert.throws(function () { createRule(noop, []); });
-            assert.throws(function () { createRule(noop, {}); });
-            assert.throws(function () { createRule(noop, ''); });
-            assert.throws(function () { createRule(noop, / /); });
-            assert.throws(function () { createRule(noop, 0); });
-            assert.throws(function () { createRule(noop, 1); });
+        it('should throw with invalid condition', function () {
+            assert.throws(function () { createRule(undefined, _.noop); });
+            assert.throws(function () { createRule(null, _.noop); });
+            assert.throws(function () { createRule([], _.noop); });
+            assert.throws(function () { createRule({}, _.noop); });
+            assert.throws(function () { createRule('', _.noop); });
+            assert.throws(function () { createRule(/ /, _.noop); });
+            assert.throws(function () { createRule(0, _.noop); });
+            assert.throws(function () { createRule(1, _.noop); });
+        });
+        it('should throw without body', function () {
+            assert.throws(function () { createRule(_.noop); });
+        });
+        it('should throw with invalid body', function () {
+            assert.throws(function () { createRule(_.noop, undefined); });
+            assert.throws(function () { createRule(_.noop, null); });
+            assert.throws(function () { createRule(_.noop, []); });
+            assert.throws(function () { createRule(_.noop, {}); });
+            assert.throws(function () { createRule(_.noop, ''); });
+            assert.throws(function () { createRule(_.noop, / /); });
+            assert.throws(function () { createRule(_.noop, 0); });
+            assert.throws(function () { createRule(_.noop, 1); });
         });
         it('should not invoke parameters during initialization', function () {
             var condition = sinon.spy(),
