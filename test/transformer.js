@@ -123,6 +123,11 @@ describe('Transformer', function () {
             assert.ok(check.notCalled);
             assert.ok(body.notCalled);
         });
+        it('should not invoke reducer during creation', function () {
+            var reduce = sinon.spy();
+            createTransformer({}, reduce);
+            assert.ok(reduce.notCalled);
+        });
     });
     describe('execution', function () {
         function emptyBody() {
