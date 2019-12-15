@@ -1,6 +1,6 @@
 {
   "name": "almost",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "description": "ALMOsT is an AgiLe MOdel Transformation framework for JavaScript",
   "main": "index.js",
   "repository": {
