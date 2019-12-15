@@ -51,8 +51,6 @@ gulp.task('almost.min.js', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['almost.js', 'almost.min.js']);
+gulp.task('build', gulp.parallel('almost.js', 'almost.min.js'));
 
-gulp.task('default', ['clean'], function () {
-    return gulp.start('build');
-});
+gulp.task('default', gulp.series('clean', 'build'));
