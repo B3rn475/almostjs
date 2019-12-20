@@ -26,8 +26,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-rimraf": "^1.0.0",
     "gulp-uglify": "^3.0.2",
-    "istanbul": "latest",
     "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
     "sinon": "^4.4.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
@@ -39,8 +39,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
-    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "coverage": "nyc npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "build": "gulp",
     "prepublish": "gulp"
   }
