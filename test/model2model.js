@@ -20,7 +20,7 @@ describe('m2m | model2model', function () {
             },
             result = transform(model);
         assert.notEqual(result, model);
-        assert.deepEqual(result, model);
+        assert.deepStrictEqual(result, model);
     });
     it('should concat elements', function () {
         var transform = createTransformer({
@@ -40,7 +40,7 @@ describe('m2m | model2model', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [{id: 1}, {id: 2}],
             relations: []
         });
@@ -63,7 +63,7 @@ describe('m2m | model2model', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [{id: 1}, {id: 2}],
             relations: []
         });
@@ -86,7 +86,7 @@ describe('m2m | model2model', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [{id: 1}, {id: 2}]
         });
@@ -109,7 +109,7 @@ describe('m2m | model2model', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [{id: 1}, {id: 2}]
         });
@@ -132,7 +132,7 @@ describe('m2m | model2model', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [],
             metadata: {

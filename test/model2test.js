@@ -19,7 +19,7 @@ describe('m2t | model2text', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {});
+        assert.deepStrictEqual(result, {});
     });
     it('should return a model copy', function () {
         var partial = {
@@ -39,7 +39,7 @@ describe('m2t | model2text', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, partial);
+        assert.deepStrictEqual(result, partial);
     });
     it('should merge top level objects', function () {
         var transform = createTransformer({
@@ -64,7 +64,7 @@ describe('m2t | model2text', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             a: {name: 'a', isFolder: true, children: ['b']},
             b: {name: 'b', content: 'File Content'}
         });
@@ -94,7 +94,7 @@ describe('m2t | model2text', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             a: {name: 'a', isFolder: true, children: ['b']},
             b: {name: 'b', content: 'File Content'}
         });
@@ -122,7 +122,7 @@ describe('m2t | model2text', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             a: {name: 'a', isFolder: true, children: ['b', 'c']}
         });
     });

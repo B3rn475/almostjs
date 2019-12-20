@@ -20,7 +20,7 @@ describe('m2a | model2almost', function () {
             },
             result = transform(model);
         assert.notEqual(result, model);
-        assert.deepEqual(result, model);
+        assert.deepStrictEqual(result, model);
     });
     it('should concat elements', function () {
         var transform = createTransformer({
@@ -41,7 +41,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [{
                 id: 1,
                 type: 'type.Type',
@@ -73,7 +73,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [{
                 id: 1,
                 type: 'type.Type',
@@ -128,7 +128,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [{
                 id: 'a',
                 type: 'type.Type',
@@ -168,7 +168,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [{
                 type: 'itself',
@@ -201,7 +201,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [{
                 type: 'itself',
@@ -232,7 +232,7 @@ describe('m2a | model2almost', function () {
                 relations: []
             },
             result = transform(model);
-        assert.deepEqual(result, {
+        assert.deepStrictEqual(result, {
             elements: [],
             relations: [],
             metadata: {
